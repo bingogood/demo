@@ -1,0 +1,137 @@
+ul li{
+	float: left;
+}
+.ppnav{
+	width: 100%;
+	height: 67px;
+	border-bottom: 1px solid #c6c6c6;
+	box-sizing: border-box;
+}
+.ppbao{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: auto;
+}
+.ppnav ul{
+	width: 100%;
+	height: 100%;
+}
+.ppnav ul li{
+	/*width: 100%;*/
+	height: 67px;
+	line-height: 67px;
+	margin-left: 6%;
+	text-align: center;
+	width: 16.8%;
+	
+}
+.ppnav ul li:hover{
+	line-height: 79px;
+	margin-top: -6px;
+	border-bottom: 6px solid #c6c6c6;
+	width: 16.8%;
+}
+.ppnav a{
+	width: 100%;
+    color: #2a2a2a;
+    height: 100%;
+    display: block;
+}
+.ziyoupp{
+	text-align: center;
+	font-size: 25px;
+	padding-top: 4.8%;
+	margin-bottom: 3.2%;
+}
+.zyppnav{
+	width: 100%;
+	height: 67px;
+	margin-bottom: 2%;
+}
+.zyppnav ul li{
+	height: 49px;
+	line-height: 49px;
+	margin-left: 1%;
+	text-align: center;
+	
+}
+.ppbao1{
+	width: 71.5%;
+	height: 100%;
+	
+	margin: auto;
+}
+.ppbao1 ul{
+	width: 71.5%;
+	position: absolute;
+    /*left: 20%;*/
+   padding-left: 14%;
+}
+.ppbao1 ul li{
+	width: 9.28%;
+	background: #000000;
+}
+.ppbao1 a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: #ffffff;
+}
+.ppbao1 ul li:hover{
+	background: #ebd8a0;
+	color: #2a2a2a;
+}
+.ppzh{
+	width: 90%;
+	/*height: 156px;*/
+	margin: auto;
+}
+.ppzh>div{
+	float: left;
+	width: 19%;
+	margin-right: 1%;
+}
+.ppzh>div img{
+	width: 100%;
+}
+
+.ppgan{
+	margin: auto;
+	margin-top: 2.5%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.ppganone{
+	width: 62px;
+	height: 5px;
+	background: #2a2a2a;
+	float: left;
+}
+.ppgantwo{
+	width: 62px;
+	height: 5px;
+	background: #dbdbdb;
+	margin-left: 15px;
+	float: left;
+}
+.mengban{
+	background: #eeeeee;
+	
+}
+.baogan{
+	height: 110px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	.ppbao1 ul li {
+    width: 13.28%;
+    background: #000000;
+}
+.ppbao1 ul {
+    padding-left: 5%;
+}
+}

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://hovertree.com/" />
+    <title>JS实现复选框的全选和取消全选 - 何问起</title><base target="_blank" />
+    <style type="text/css">
+        li {
+            list-style-type: none;
+            font-size: 12px;
+            color: blue;
+            width: 300px;
+            height: 20px;
+            line-height: 20px;
+        }
+
+        a {
+            width: 200px;
+            height: 20px;
+            float: left;
+        }
+
+        .ck {
+            float: left;
+            width: 26px;
+        }
+
+        .time {
+            color: red;
+            width: 60px;
+            height: 20px;
+            float: right;
+        }
+
+        .dohovertree {
+            font-size: 12px;
+        }
+    </style>
+    <script type="text/javascript">
+
+window.onload=function()
+{
+  var checkboxs=document.getElementsByName("myHove"+"rTreechk");
+  var hvtck=document.getElementById("hvtck");
+  cklen=checkboxs.length;
+  hvtck.onclick=function()
+  {
+    if(this.checked==true)
+    {
+      for(var i=0;i<cklen;i++)
+      {
+        checkboxs[i].checked=true;
+      }
+      document.getElementById("dohovert"+"ree").innerHTML="取消"
+    }
+    else
+    {
+      for(var i=0;i<cklen;i++)
+      {
+        checkboxs[i].checked=false;
+      }
+      document.getElementById("dohovertree").innerHTML="全选"
+    }
+  }
+}
+    </script>
+</head>
+<body>
+    
+    <div>
+        <ul>
+            <li>
+                <input type="checkbox" name="myHoverTreechk" />
+                
+            </li>
+            <li>
+                <input type="checkbox" name="myHoverTreechk" />
+                
+            </li>
+            <li>
+                <input type="checkbox" name="myHoverTreechk" />
+                
+            </li>
+        </ul>
+        <div>
+            <input type="checkbox" id="hvtck" />
+            <span class="dohovertree" id="dohovertree">全选</span>
+        </div>
+    </div>
+</body>
+</html>
